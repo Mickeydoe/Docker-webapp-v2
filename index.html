@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serverless Guestbook</title>
+    <title>AZUIB LOGIN</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>AZUBI LOGIN</h1>
-        <form action="process.php" method="POST"></form>
+        <form action="login.php" method="POST"></form>
         <form id="guestbookForm">
             <!-- Input field for user's name -->
-            <label for="name">Username:</label>
-            <input type="text" id="name" name="name" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
             
             <!-- Text area for user's message -->
             <label for="password">Password:</label>
-            <textarea id="password" name="password" required></textarea>
+            <input type="password" id="password" name="password" required></textarea>
             
             <!-- Submit button for the form -->
             <button type="submit">Submit</button>
         </form>
-        <div id="responseMessage"></div>
     </div>
 
 </body>
