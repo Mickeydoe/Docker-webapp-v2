@@ -9,14 +9,15 @@
 <body>
     <div class="container">
         <h1>AZUBI LOGIN</h1>
+        <form action="process.php" method="POST"></form>
         <form id="guestbookForm">
             <!-- Input field for user's name -->
             <label for="name">Username:</label>
             <input type="text" id="name" name="name" required>
             
             <!-- Text area for user's message -->
-            <label for="message">Password:</label>
-            <textarea id="message" name="message" required></textarea>
+            <label for="password">Password:</label>
+            <textarea id="password" name="password" required></textarea>
             
             <!-- Submit button for the form -->
             <button type="submit">Submit</button>
@@ -24,7 +25,6 @@
         <div id="responseMessage"></div>
     </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
 
