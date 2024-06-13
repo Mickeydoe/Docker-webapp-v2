@@ -1,48 +1,54 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
 }
 
 .container {
-    background-color: #fff;
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgb(236, 231, 231);
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1 {
-    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    display: block;
-    margin: 10px 0 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-input[type="text"], input[type="password"] {
-    width: calc(100% - 20px);
-    padding: 10px;
+input, textarea, button {
     margin-bottom: 15px;
+    padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #011406;
+    color: rgb(228, 151, 151);
     border: none;
-    border-radius: 3px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0cdd40ea;
+}
+
+#responseMessage {
+    text-align: center;
+    color: rgb(10, 221, 10);
+    font-weight: bold;
 }
