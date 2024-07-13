@@ -14,6 +14,10 @@ $username = htmlspecialchars($_GET['username']);
     <div class="container">
         <h1>Welcome, <?php echo $username; ?>!</h1>
         <p>You have successfully logged in.</p>
+    <div>
+
+    <div class="view-container">
+        <a href="guestlist.php" class="view-link">View Guest List</a>
     </div>
 </body>
 </html>
