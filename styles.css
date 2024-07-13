@@ -14,6 +14,27 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.view-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #011406;
+    color: rgb(228, 151, 151);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-link:hover {
+    background-color: #0cdd40ea;
+}
+
 h1 {
     text-align: center;
     color: #333;
