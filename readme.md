@@ -53,14 +53,3 @@ The AZUBI Form Submission Web Application is a lightweight web-based tool design
    - Launch the task using Fargate, which manages the container deployment and scales as needed.
    - Access the application via the public IP address assigned to the running Fargate task.
 
-### Benefits
-
-- **Ease of Development and Deployment**: Using Docker and AWS ECS, the application can be quickly built, tested, and deployed, reducing time-to-market.
-- **Scalability**: AWS Fargate provides automatic scaling, ensuring the application can handle varying loads without manual intervention.
-- **Consistency**: Docker ensures that the application runs consistently across different environments, eliminating the "works on my machine" problem.
-- **Managed Services**: AWS Fargate handles the infrastructure, allowing developers to focus on writing code rather than managing servers.
-
-### Conclusion
-
-This project provides a practical example of modern web application development and deployment practices, leveraging PHP for server-side processing, Docker for containerization, and AWS for cloud hosting and scalability. It demonstrates a streamlined approach to building and deploying web applications in a cloud-native environment.
-
