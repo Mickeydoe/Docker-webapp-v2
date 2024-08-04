@@ -14,7 +14,7 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 
 # Install Composer
-COPY composer.json composer.lock /var/www/html//
+COPY composer.json composer.lock /var/www/html/
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
     && composer install --no-scripts --no-autoloader
@@ -24,5 +24,5 @@ RUN composer install --no-interaction --no-scripts
 
 
 # Set environment variables for AWS credentials
-ENV AWS_ACCESS_KEY_ID=your-access-key-id
-ENV AWS_SECRET_ACCESS_KEY=your-secret-access-key
+ENV AWS_ACCESS_KEY_ID=yourkeys
+ENV AWS_SECRET_ACCESS_KEY=yourkeys

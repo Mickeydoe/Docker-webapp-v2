@@ -4,44 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guest List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        .guest {
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-        }
-        .guest:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .guest .name {
-            font-weight: bold;
-            color: #007bff;
-        }
-        .guest .email {
-            color: #28a745;
-        }
-        .guest .country {
-            color: #dc3545;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
+
     <div class="container">
         <h1>Guestlist</h1>
         <?php
@@ -62,9 +29,9 @@
                 'secret' => $awsSecretAccessKey,
             ]
         ]);
-
+ 
         // Retrieve items from the DynamoDB table
-        $tableName = 'Guestlist';
+        $tableName = 'guestbook';
 
         try {
             $result = $dynamoDb->scan([
@@ -86,6 +53,13 @@
             echo '<p>Error retrieving data: ' . $e->getMessage() . '</p>';
         }
         ?>
+
+    <div class="slideshow-container">
+        <div class="slide" style="background-image: url('assets/background1.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/background2.jpg');"></div>
+        <div class="slide" style="background-image: url('assets/background3.jpg');"></div>
     </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
